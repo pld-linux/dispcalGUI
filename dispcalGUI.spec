@@ -42,13 +42,11 @@ chmod +x misc/Argyll
 find -name .DS_Store | xargs rm -rv
 
 %build
-%{__python} setup.py build --use-distutils
+%py_build --use-distutils
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__python} setup.py install \
-	--optimize=2 \
-	--skip-build \
+%py_install \
 	--skip-instrument-configuration-files \
 	--skip-postinstall \
 	--use-distutils \
