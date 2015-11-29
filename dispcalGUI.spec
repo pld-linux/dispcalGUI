@@ -7,6 +7,7 @@ Source0:	http://dispcalGUI.hoech.net/%{name}-%{version}.tar.gz
 # Source0-md5:	0b26561e61761e6be99964b35496af41
 Group:		Applications/Multimedia
 URL:		http://dispcalgui.hoech.net/
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	desktop-file-utils
 BuildRequires:	python-devel
 BuildRequires:	udev-core
